@@ -1,0 +1,7 @@
+vendor
+.php_cs.cache
+.DS_Store
+tests/.phpunit.result.cache
+tests/report.xml
+tests/coverage.txt
+tests/html-coverage
