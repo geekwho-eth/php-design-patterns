@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\AbstractFactory\SimpleAbstractFactory;
 
 class MacButton extends Button

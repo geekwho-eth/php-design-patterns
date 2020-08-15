@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\AbstractFactory\AbstractFactoryPattern;
 
 class ShapeFactory extends AbstractFactory
@@ -10,7 +11,7 @@ class ShapeFactory extends AbstractFactory
         }
         $class = __NAMESPACE__ . "\\" . ucfirst($shapeType);
         if (class_exists($class)) {
-            return new $class;
+            return new $class();
         }
         return null;
     }

@@ -17,7 +17,7 @@ class FlyWeightDemo
     public function run()
     {
         foreach ($this->colors as $key => $color) {
-            $circle = (new ShapeFactory)->getCircle($color);
+            $circle = (new ShapeFactory())->getCircle($color);
             $circle->setX(42);
             $circle->setY(42);
             $circle->setRadius(100);

@@ -16,7 +16,7 @@ class ColorFactory extends AbstractFactory
         }
         $class = __NAMESPACE__ . "\\" . ucfirst($colorType);
         if (class_exists($class)) {
-            return new $class;
+            return new $class();
         }
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Observer;
 
 interface ISubject

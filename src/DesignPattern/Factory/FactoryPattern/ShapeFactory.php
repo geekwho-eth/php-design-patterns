@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Factory\FactoryPattern;
 
 class ShapeFactory
@@ -10,7 +11,7 @@ class ShapeFactory
         }
         $class = __NAMESPACE__ . "\\" . ucfirst($shapeType);
         if (class_exists($class)) {
-            return new $class;
+            return new $class();
         }
         return null;
     }

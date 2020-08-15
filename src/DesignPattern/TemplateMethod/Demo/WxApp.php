@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\TemplateMethod\Demo;
 
 class WxApp extends Framework

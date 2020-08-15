@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\AbstractFactory\AbstractFactoryPattern;
 
 interface IColor

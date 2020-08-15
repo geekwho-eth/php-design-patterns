@@ -4,9 +4,9 @@ namespace DesignPattern\ChainOfResponsibility;
 
 abstract class AbstractLogger
 {
-    const INFO  = 1;
-    const DEBUG = 2;
-    const ERROR = 3;
+    public const INFO  = 1;
+    public const DEBUG = 2;
+    public const ERROR = 3;
 
     protected $level;
 
