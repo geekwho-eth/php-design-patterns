@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\State;
 
 class OtherState extends \DesignPattern\Singleton\BaseSingleton implements IState

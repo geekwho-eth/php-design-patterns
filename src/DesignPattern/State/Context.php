@@ -1,10 +1,11 @@
 <?php
+
 namespace DesignPattern\State;
 
 class Context
 {
     private $state;
-    
+
     public function __construct(IState $state)
     {
         $this->state = $state;

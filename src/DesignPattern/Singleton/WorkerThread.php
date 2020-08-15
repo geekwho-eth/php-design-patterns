@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Singleton;
 
 if (!class_exists('Thread')) {

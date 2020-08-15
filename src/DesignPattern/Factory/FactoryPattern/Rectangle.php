@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Factory\FactoryPattern;
 
 class Rectangle implements IShape

@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Factory\SimpleFactory;
 
 class MyCreator implements ICreator

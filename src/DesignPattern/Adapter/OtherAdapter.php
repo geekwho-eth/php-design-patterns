@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Adapter;
 
 class OtherAdapter

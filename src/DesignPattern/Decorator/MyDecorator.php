@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Decorator;
 
 class MyDecorator extends Decorator

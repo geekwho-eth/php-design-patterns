@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\TemplateMethod;
 
 class MyClass extends AbstractClass

@@ -1,4 +1,5 @@
 <?php
+
 /**
  *  策略模式 测试用例
  */
@@ -29,7 +30,7 @@ DesignPattern\Strategy\OtherStrategy algorithmInterface
         $strategy = new \DesignPattern\Strategy\MyStrategy();
         $context  = new \DesignPattern\Strategy\Context($strategy);
         $context->contextInterface();
- 
+
         $strategy = new \DesignPattern\Strategy\OtherStrategy();
         $context  = new \DesignPattern\Strategy\Context($strategy);
         $context->contextInterface();

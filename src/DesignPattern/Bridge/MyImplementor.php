@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Bridge;
 
 class MyImplementor extends Implementor

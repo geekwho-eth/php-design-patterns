@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Visitor;
 
 class Computer implements IComputerPart

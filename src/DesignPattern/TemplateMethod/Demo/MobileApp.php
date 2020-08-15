@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\TemplateMethod\Demo;
 
 class MobileApp extends Framework

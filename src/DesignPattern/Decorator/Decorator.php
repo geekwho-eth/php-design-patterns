@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Decorator;
 
 abstract class Decorator implements IComponent

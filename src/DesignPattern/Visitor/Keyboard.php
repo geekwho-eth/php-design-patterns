@@ -1,4 +1,5 @@
 <?php
+
 namespace DesignPattern\Visitor;
 
 class Keyboard implements IComputerPart

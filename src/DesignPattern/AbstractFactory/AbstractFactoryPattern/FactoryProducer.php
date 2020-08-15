@@ -11,7 +11,7 @@ class FactoryProducer
         }
         $class = __NAMESPACE__ . "\\" . ucfirst($factoryType);
         if (class_exists($class)) {
-            return new $class;
+            return new $class();
         }
         return null;
     }
