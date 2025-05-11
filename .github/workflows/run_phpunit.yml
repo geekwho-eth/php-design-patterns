@@ -3,16 +3,20 @@ name: run unit test
 on: [push]
 
 jobs:
-  build:
+  run_phpunit:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
-    - uses: php-actions/composer@v1
+
+    - name: Set up PHP 
+      uses: php-actions/composer@v6
       with:
-          command: '-V'
-    - name: composer install
-      run: composer install
+          php_version: '8.4'  # 指定 PHP 8.4
     - name: run phpunit
-      run: chmod +x scripts/* -R && ./scripts/run_test.sh
+      uses: php-actions/phpunit@v3
+      with:
+        php_version: 8.4
+        php_extensions: "xdebug sysvsem"
+        configuration: "tests/phpunit.xml"
