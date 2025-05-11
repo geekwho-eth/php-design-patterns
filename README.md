@@ -1,42 +1,117 @@
-# PHP 设计模式学习笔记
+# PHP 设计模式代码示例
 
-本仓库旨在记录和整理我在学习 PHP 设计模式过程中的笔记、代码示例和理解。
+本仓库是一个学习和实践 PHP 设计模式的项目，包含经典设计模式的代码实现、应用场景和单元测试，旨在帮助开发者深入理解设计模式的核心思想，并将其应用到实际开发中。
 
-## 什么是设计模式？
+---
 
-设计模式是在软件设计中针对常见问题的可重用解决方案。它们是经过时间考验的最佳实践，可以帮助我们编写出更易于理解、维护和扩展的代码。设计模式不是具体的代码，而是一种解决特定问题的思路和方法。
+## 项目介绍
 
-## 本仓库包含的内容
+设计模式是软件开发中解决常见问题的通用解决方案。通过学习设计模式，开发者可以编写出更高效、可维护、可扩展的代码。本项目基于 PHP 实现了经典的 GoF 设计模式，并结合实际场景提供了代码示例和单元测试。
 
-本仓库将涵盖以下内容：
+---
 
-* **经典 GoF 设计模式：**
-    * 创建型模式 (Creational Patterns)
-    * 结构型模式 (Structural Patterns)
-    * 行为型模式 (Behavioral Patterns)
-* **PHP 特有的设计模式或实践**
-* **每个模式的详细介绍、UML 类图（如果适用）、PHP 代码示例和应用场景**
-* **学习心得和体会**
+## 目录结构
 
-## 如何使用本仓库
-
-您可以将本仓库克隆到本地进行学习：
-
-```bash
-git clone [https://github.com/geekwho-eth/php-design-patterns.git](https://github.com/geekwho-eth/php-design-patterns.git)
-cd php-design-patterns
+```
+php-design-patterns/
+├── src/DesignPattern/         # 设计模式的代码实现
+│   ├── Proxy/                 # 代理模式
+│   ├── Iterator/              # 迭代器模式
+│   └── ...                    # 其他设计模式
+├── tests/src/                 # 单元测试代码
+│   ├── ProxyTest.php          # 代理模式的单元测试
+│   ├── IteratorTest.php       # 迭代器模式的单元测试
+│   └── ...                    # 其他模式的单元测试
+├── README.md                  # 项目说明文档
+└── composer.json              # PHP 依赖管理文件
 ```
 
-您可以按照目录结构浏览不同的设计模式，查看相关的说明和代码示例。
+---
 
-## 贡献
-欢迎您通过以下方式为本仓库做出贡献：
+## 设计模式列表
 
-- 发现错误并提出 Issue
-- 提交代码示例或改进建议
+本仓库实现了以下经典设计模式：
+
+### 创建型模式 (Creational Patterns)
+- 工厂模式 (Factory Pattern)
+- 单例模式 (Singleton Pattern)
+- 建造者模式 (Builder Pattern)
+
+### 结构型模式 (Structural Patterns)
+- 代理模式 (Proxy Pattern)
+- 装饰器模式 (Decorator Pattern)
+- 适配器模式 (Adapter Pattern)
+
+### 行为型模式 (Behavioral Patterns)
+- 迭代器模式 (Iterator Pattern)
+- 策略模式 (Strategy Pattern)
+- 观察者模式 (Observer Pattern)
+
+每种模式都包含以下内容：
+- 模式简介与应用场景
+- PHP 代码实现
+- 单元测试示例
+
+---
+
+## 单元测试
+
+本项目使用 PHPUnit 进行单元测试。测试代码位于 `tests/src/` 目录下，每个设计模式对应一个测试文件。
+
+---
+
+## 使用方法
+
+1. 克隆本仓库到本地：
+   ```bash
+   git clone https://github.com/geekwho-eth/php-design-patterns.git
+   cd php-design-patterns
+   ```
+
+2. 安装依赖：
+   ```bash
+   composer install
+   
+   # 确保已安装 PHPUnit：
+   vendor/bin/phpunit -h
+   ```
+
+3. 按照目录结构浏览代码，学习不同设计模式的实现。运行单元测试验证代码功能。
+
+   ```shell
+   # 运行测试
+   ./scripts/run_test.sh
+   ```
+
+   示例输出
+
+   ```shell
+   PHPUnit 12.0.0 by Sebastian Bergmann and contributors.
+   
+   Runtime:       PHP 8.4.7
+   Configuration: /php-design-patterns/tests/phpunit.xml
+   
+   ...............................................                   47 / 47 (100%)
+   
+   Time: 00:00.045, Memory: 10.00 MB
+   
+   OK (47 tests, 90 assertions)
+   ```
+
+   
+
+---
+
+## 贡献指南
+
+欢迎通过以下方式为本仓库贡献内容：
+
+- 提出 Issue 报告错误或建议改进
+- 提交 Pull Request 添加代码示例或优化现有代码
 - 分享您的学习心得
 
-如果您有任何问题或建议，欢迎通过 Issue 或 Pull Request 的方式进行交流。
+---
 
-## 许可
-本仓库采用 MIT License 许可证。
+## 许可证
+
+本仓库采用 MIT License 许可证，您可以自由使用和分发。
