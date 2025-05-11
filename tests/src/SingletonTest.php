@@ -69,7 +69,8 @@ class SingletonTest extends \PHPUnit\Framework\TestCase
     {
         // 获取单例
         $actual = \DesignPattern\Singleton\SimpleSingleton::getInstance();
-        $this->expectErrorMessage("Call to private DesignPattern\Singleton\SimpleSingleton::__clone() from scope SingletonTest");
+        $this->expectException(\Error::class); // 期望抛出一个 Error
+        $this->expectExceptionMessage("Call to private DesignPattern\Singleton\SimpleSingleton::__clone() from scope SingletonTest");
         $clone = clone $actual;
     }
 
